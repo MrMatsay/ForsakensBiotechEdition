@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>FO_Vitaminf</defName>
+    <label>vitamin f</label>
+    <description>A synthetic combat-enhancing drug developed by Forsakens to counter their weaknesses in combat. These pills reduce pain, while slightly increasing consciousness, breathing and manipulation. While they aren't addictive, the effect wears off rapidly.</description>
+    <graphicData>
+      <texPath>Drugs/VitaminF</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>800</WorkToMake>
+      <MarketValue>22</MarketValue>
+      <Mass>0.005</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <ingestible>
+      <drugCategory>Hard</drugCategory>
+      <foodType>Processed</foodType>
+      <baseIngestTicks>50</baseIngestTicks>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <ingestCommandString>Take {0}</ingestCommandString>
+      <ingestReportString>Taking {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <chairSearchRadius>0</chairSearchRadius>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>FO_VitaminfHigh</hediffDef>
+          <severity>1.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>FO_Drugs</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>3</Neutroamine>
+      <FO_KaleidosCrystal>10</FO_KaleidosCrystal>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>200</listOrder>
+        <overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
+        <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>FO_VitaminfHigh</defName>
+    <description>High on vitamin f</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>high on vitamin f</label>
+    <labelNoun>a vitamin f high</labelNoun>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.70</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <painFactor>-0.2</painFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.05</offset>
+          </li>
+          <li>
+            <capacity>Breathing</capacity>
+            <offset>0.15</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.15</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>

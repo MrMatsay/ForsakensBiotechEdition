@@ -1,0 +1,35 @@
+<ModMetaData>
+	<name>Forsakens Biotech Edition</name>
+	<author>Major_Quadrangle</author>
+	<supportedVersions>
+		<li>1.4</li>
+		<li>1.5</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+			<displayName>Vanilla Expanded Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>Ludeon.RimWorld.Biotech</packageId>
+			<displayName>Biotech</displayName>
+			
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>brrainz.harmony</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>sarg.alphaanimals</li>
+		<li>sarg.alphabiomes</li>
+		<li>vanillaracesexpanded.android</li>
+		<li>sarg.alphagenes</li>
+	</loadAfter>
+	<packageId>quad.forsakens</packageId>
+	<description>There once was a race with some kind of link to the humanoid races of earth and beyond known as the Enlightened. Having been on the brink of perfection, they let their ambition and hunger for true wisdom and power blind them. With betrayals and events beyond mortal comprehension leading them down a path of desolation, they made one final mistake, leading to their fall, and the universe lost its most advanced biological race. But from their ashes rose the Forsaken(s), a broken, decaying remnant of what was once a nigh-perfect spacefaring nation, now bathed in hatred and cosmic curses for the magnitude of their betrayal. Now their fallen armies rise once again and march to reclaim what was once denied to them.
+	</description>
+</ModMetaData>

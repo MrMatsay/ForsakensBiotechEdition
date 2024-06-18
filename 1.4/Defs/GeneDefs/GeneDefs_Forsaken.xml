@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef>
+		<defName>FO_Body</defName>
+		<label>forsaken body</label>
+		<labelShortAdj>forsaken</labelShortAdj>
+		<description>Carriers of this gene have a body that seems to have deep valleys around their bodies and ribs visible beneath the skin in certain places, yet are otherwise healthy in appearance. This results in a slightly lower weight and a significantly more fragile body.</description>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>3</biostatMet>
+		<displayCategory>Miscellaneous</displayCategory>
+		<selectionWeight>0</selectionWeight>
+		<displayOrderInCategory>490</displayOrderInCategory>
+		<exclusionTags>
+			<li>AG_Bodies</li>
+			<li>Bodies</li>
+			<li>Body</li>
+		</exclusionTags>
+		<statFactors>
+			<Mass>0.92</Mass>
+			<MeatAmount>0.92</MeatAmount>
+			<IncomingDamageFactor>1.25</IncomingDamageFactor>
+		</statFactors>
+		<iconPath>UI/Icons/Genes/FO_Body</iconPath>
+		<graphicData>
+			<drawLoc>Tailbone</drawLoc>
+			<fur>FO_Body</fur>
+		</graphicData>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<useSkinColorForFur>true</useSkinColorForFur>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	<GeneDef>
+		<defName>FO_Head</defName>
+		<label>forsaken head</label>
+		<description>Carriers of this gene have valleys around the their skull, yet are otherwise healthy in appearance. This does not have any functional effect.</description>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<displayCategory>Cosmetic</displayCategory>
+		<iconPath>UI/Icons/Genes/FO_Head</iconPath>
+		<displayOrderInCategory>101</displayOrderInCategory>
+		<graphicData>
+			<useSkinShader>true</useSkinShader>
+			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/FO_Head/FO_Head</graphicPath>
+			<visibleNorth>true</visibleNorth>
+			<layer>PostSkin</layer>
+			<colorType>Skin</colorType>
+		</graphicData>
+	</GeneDef>
+	<GeneDef>
+		<defName>FO_BodyEmblem</defName>
+		<label>forsaken body emblem</label>
+		<description>Carriers of this gene have a yellow emblem associated with the forsakens on their midsection. This comes with multiple physical benefits.</description>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-3</biostatMet>
+		<iconPath>UI/Icons/Genes/FO_Emblem</iconPath>
+		<displayOrderInCategory>102</displayOrderInCategory>
+		<displayCategory>Cosmetic</displayCategory>
+		<statFactors>
+			<MoveSpeed>1.2</MoveSpeed>
+			<WorkSpeedGlobal>1.1</WorkSpeedGlobal>
+			<MeleeDamageFactor>1.25</MeleeDamageFactor>
+		</statFactors>
+		<selectionWeight>0</selectionWeight>
+		<graphicData>
+			<graphicPath>Things/Pawn/Humanlike/BodyAttachments/FO_BodyEmblem/FO_BodyEmblem</graphicPath>
+			<visibleNorth>false</visibleNorth>
+			<drawLoc>Tailbone</drawLoc>
+		</graphicData>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<offsets>
+					<south>
+						<bodyTypes>
+							<Male>(0, 0.01, -0.14)</Male>
+							<Female>(0, 0.01, -0.15)</Female>
+							<Thin>(0, 0.01, -0.13)</Thin>
+							<Hulk>(0, 0.01, -0.2)</Hulk>
+							<Fat>(0, 0.01, -0.1)</Fat>
+							<Child>(0, 0.01, -0.01)</Child>
+						</bodyTypes>
+					</south>
+				</offsets>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	<GeneDef>
+		<defName>FO_HeadEmblem</defName>
+		<label>forsaken head emblem</label>
+		<description>Carriers of this gene have a yellow emblem associated with the forsakens on their forehead. This comes with multiple mental benefits.</description>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<displayCategory>Cosmetic</displayCategory>
+		<statFactors>
+			<ResearchSpeed>1.3</ResearchSpeed>
+			<GlobalLearningFactor>1.10</GlobalLearningFactor>
+			<MeleeDodgeChance>1.2</MeleeDodgeChance>
+		</statFactors>
+		<iconPath>UI/Icons/Genes/FO_Emblem</iconPath>
+		<displayOrderInCategory>103</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/FO_HeadEmblem/FO_HeadEmblem</graphicPath>
+			<visibleNorth>false</visibleNorth>
+			<layer>PostSkin</layer>
+		</graphicData>
+	</GeneDef>
+	<GeneDef ParentName="GeneEyeColor">
+		<defName>FO_Eyes</defName>
+		<label>forsaken eyes</label>
+		<iconPath>UI/Icons/Genes/FO_Eyes</iconPath>
+		<description>Carriers of this gene have four yellow eyes, with two smaller ones under two larger ones.</description>
+		<displayOrderInCategory>1</displayOrderInCategory>
+		<graphicData>
+			<drawScale>0.4</drawScale>
+			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/FO_Eyes/FO_Eyes</graphicPath>
+			<visibleNorth>false</visibleNorth>
+			<drawOnEyes>true</drawOnEyes>
+			<layer>PostTattoo</layer>
+		</graphicData>
+	</GeneDef>
+</Defs>

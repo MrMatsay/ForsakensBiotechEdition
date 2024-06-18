@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <KCSG.SymbolDef>
+    <defName>FO_CryptosleepCasket_South</defName>
+    <thing>CryptosleepCasket</thing>
+    <rotation>South</rotation>
+    <faction>AncientsHostile</faction>
+    <containPawnKindAnyOf>
+      <li>ForsakenSlasher</li>
+    </containPawnKindAnyOf>
+  </KCSG.SymbolDef>
+</Defs>

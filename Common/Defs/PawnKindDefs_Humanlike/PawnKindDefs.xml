@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<PawnKindDef ParentName="ForsakenBase">
+		<defName>ForsakenSlasher</defName>
+		<label>forsaken slasher</label>
+		<combatPower>70</combatPower>
+		<weaponTags>
+			<li>ForsakenMelee</li>
+		</weaponTags>
+		<apparelRequired>
+			<li>Apparel_ShieldBelt</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForsakenBase">
+		<defName>ForsakenGunner</defName>
+		<label>forsaken gunner</label>
+		<combatPower>70</combatPower>
+		<weaponTags>
+			<li>ForsakenRanged</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForsakenBase">
+		<defName>KingOfTheLostOnes</defName>
+		<label>forsaken king</label>
+		<factionLeader>true</factionLeader>
+		<combatPower>90</combatPower>
+		<apparelRequired>
+			<li>FO_Forsaken_Armor</li>
+			<li>FO_Forsaken_Helmet</li>
+		</apparelRequired>
+		<apparelMoney>
+			<min>5000</min>
+			<max>10000</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<weaponMoney>
+			<min>4000</min>
+			<max>10000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>WForsaken</li>
+		</weaponTags>
+		<techHediffsMoney>
+			<min>10000</min>
+			<max>20000</max>
+		</techHediffsMoney>
+		<techHediffsChance>1</techHediffsChance>
+		<initialResistanceRange>30~45</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForsakenBase">
+		<defName>Town_GuardF</defName>
+		<label>forsaken town guard</label>
+		<combatPower>55</combatPower>
+		<isFighter>true</isFighter>
+		<gearHealthRange>
+			<min>0.6</min>
+			<max>2</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>400</min>
+			<max>600</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<weaponTags>
+			<li>WForsaken</li>
+		</weaponTags>
+		<weaponMoney>
+			<min>6390</min>
+			<max>6390</max>
+		</weaponMoney>
+		<techHediffsChance>0.04</techHediffsChance>
+		<techHediffsMoney>
+			<min>200</min>
+			<max>700</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForsakenBase">
+		<defName>VillagerF</defName>
+		<label>forsaken villager</label>
+		<combatPower>35</combatPower>
+		<itemQuality>Poor</itemQuality>
+		<isFighter>false</isFighter>
+		<gearHealthRange>
+			<min>0.2</min>
+			<max>2.0</max>
+		</gearHealthRange>
+		<weaponTags>
+			<li>WForsaken</li>
+		</weaponTags>
+		<weaponMoney>
+			<min>6390</min>
+			<max>6390</max>
+		</weaponMoney>
+		<apparelMoney>
+			<min>200</min>
+			<max>400</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<techHediffsChance>0.06</techHediffsChance>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>600</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForsakenBase">
+		<defName>Town_TraderF</defName>
+		<label>forsaken town trader</label>
+		<trader>true</trader>
+		<combatPower>40</combatPower>
+		<isFighter>false</isFighter>
+		<gearHealthRange>
+			<min>1</min>
+			<max>1</max>
+		</gearHealthRange>
+		<itemQuality>Normal</itemQuality>
+		<weaponTags>
+			<li>WForsaken</li>
+		</weaponTags>
+		<weaponMoney>
+			<min>6390</min>
+			<max>6390</max>
+		</weaponMoney>
+		<apparelMoney>
+			<min>4000</min>
+			<max>6000</max>
+		</apparelMoney>
+		<apparelTags>
+			<li>Forsaken</li>
+			<li>BeltDefensePop</li>
+		</apparelTags>
+		<techHediffsChance>0.15</techHediffsChance>
+		<techHediffsMoney>
+			<min>600</min>
+			<max>1500</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</PawnKindDef>
+</Defs>

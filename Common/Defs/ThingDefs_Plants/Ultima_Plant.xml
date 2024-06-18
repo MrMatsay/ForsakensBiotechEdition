@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="PlantBase">
+    <defName>FO_PlantUltima</defName>
+    <label>ultima fabric</label>
+    <description>A mid-size crop that yields ultima fibers. The fibers is used in the making of forsaken armor.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.2</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Plants/Ultima</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <uiIconPath>Plants/Ultima/Plant_Ultima_A</uiIconPath>
+    <selectable>true</selectable>
+    <pathCost>10</pathCost>
+    <ingestible />
+    <plant>
+      <sowResearchPrerequisites>
+        <li>FO_Plants</li>
+      </sowResearchPrerequisites>
+      <growDays>10</growDays>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>Ultima</harvestedThingDef>
+      <harvestYield>5</harvestYield>
+      <sowMinSkill>7</sowMinSkill>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <topWindExposure>0.1</topWindExposure>
+      <visualSizeRange>0.3~1.05</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Ultima</defName>
+    <label>ultima fabric</label>
+    <description>Ultima fabric is used in the making of forsakens armors. Produced by ultima plant.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Ultima</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.6</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>2</MarketValue>
+      <Mass>0.026</Mass>
+      <Flammability>0.8</Flammability>
+      <DeteriorationRate>0.8</DeteriorationRate>
+      <StuffPower_Armor_Sharp>0.75</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.45</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.25</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>24</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>8</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(42,42,42)</color>
+      <statFactors>
+        <Flammability>0.8</Flammability>
+        <MaxHitPoints>1.4</MaxHitPoints>
+        <Beauty>2.5</Beauty>
+      </statFactors>
+      <categories>
+        <li>Fabric</li>
+      </categories>
+      <commonality>0.3</commonality>
+    </stuffProps>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+  </ThingDef>
+</Defs>

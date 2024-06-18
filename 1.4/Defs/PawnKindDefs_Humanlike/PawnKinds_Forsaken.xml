@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<PawnKindDef Name="ForsakenBase" Abstract="True">
+		<race>Human</race>
+		<defaultFactionType>Forsakens</defaultFactionType>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<FO_Forsaken>999</FO_Forsaken>
+			</xenotypeChances>
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+		<invNutrition>2.55</invNutrition>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>Forsaken</li>
+			<li>BeltDefensePop</li>
+		</apparelTags>
+		<inventoryOptions>
+			<skipChance>0.5</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<choiceChance>100</choiceChance>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>3</max>
+					</countRange>
+				</li>
+				<li>
+					<choiceChance>100</choiceChance>
+					<thingDef>MedicineUltratech</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<combatEnhancingDrugsCount>
+			<min>1</min>
+			<max>2</max>
+		</combatEnhancingDrugsCount>
+		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+		<apparelMoney>
+			<min>1000</min>
+			<max>4000</max>
+		</apparelMoney>
+		<techHediffsMoney>
+			<min>1000</min>
+			<max>4000</max>
+		</techHediffsMoney>
+		<weaponMoney>
+			<min>1000</min>
+			<max>4000</max>
+		</weaponMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsChance>1</techHediffsChance>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>17~26</initialResistanceRange>
+	</PawnKindDef>
+
+</Defs>

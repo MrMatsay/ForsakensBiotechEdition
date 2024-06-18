@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="PlantBase">
+    <defName>FO_PlantGamma</defName>
+    <label>gamma</label>
+    <description>A beautiful alien plant. Often used by Forsakens as a light source. It is ill advised to eat this, as it is extremely toxic.</description>
+    <graphicData>
+      <texPath>Plants/Gamma</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Beauty>10</Beauty>
+      <Nutrition>0.1</Nutrition>
+    </statBases>
+    <altitudeLayer>Building</altitudeLayer>
+    <blockWind>true</blockWind>
+    <ingestible />
+    <plant>
+      <sowResearchPrerequisites  Inherit="False">
+        <li>FO_Plants</li>
+      </sowResearchPrerequisites>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <sowWork>1200</sowWork>
+      <sowTags>
+        <li>Ground</li>
+        <li>Decorative</li>
+      </sowTags>
+      <growMinGlow>0.3</growMinGlow>
+      <topWindExposure>0.2</topWindExposure>
+      <growDays>5</growDays>
+      <lifespanDaysPerGrowDays>8</lifespanDaysPerGrowDays>
+      <visualSizeRange>0.3~1.50</visualSizeRange>
+      <purpose>Beauty</purpose>
+    </plant>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(230, 230, 90)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

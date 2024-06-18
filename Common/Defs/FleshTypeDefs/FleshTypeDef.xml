@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <FleshTypeDef>
+        <defName>FO_WoundsForsaken</defName>
+		<corpseCategory>CorpsesAnimal</corpseCategory>
+		<damageEffecter>FO_Damage_HitForsaken</damageEffecter>
+        <genericWounds>
+            <li>
+                <texture>Things/Pawn/Humanlike/Wounds/FO_WoundForsakenA</texture>
+            </li>
+            <li>
+                <texture>Things/Pawn/Humanlike/Wounds/FO_WoundForsakenB</texture>
+            </li>
+            <li>
+                <texture>Things/Pawn/Humanlike/Wounds/FO_WoundForsakenC</texture>
+            </li>
+        </genericWounds>
+    </FleshTypeDef>
+
+</Defs>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<GeneDef>
+		<defName>FO_ForsakenBlood</defName>
+		<label>yellow blood</label>
+		<displayCategory>Healing</displayCategory>
+		<description>Carriers of this gene have yellow blood.</description>
+		<iconPath>UI/Icons/Genes/FO_ForsakenBlood</iconPath>
+		<displayOrderInCategory>0</displayOrderInCategory>
+		<exclusionTags>
+			<li>AG_BloodType</li>
+			<li>BloodType</li>
+			<li>Blood</li>
+		</exclusionTags>
+		<selectionWeight>0</selectionWeight>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<customBloodThingDef>FO_FilthBlood</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/FO_ForsakenBloodIcon</customBloodIcon>
+				<customBloodEffect>FO_Damage_HitForsaken</customBloodEffect>
+				<customWoundsFromFleshtype>FO_WoundsForsaken</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>FO_ExtremelySlowAging</defName>
+		<label>extremely slow aging</label>
+		<description>Carriers of this gene will age at one twenty-fifth of the standard rate. This applies to both children and adults. The pawn will very nearly not age at all, but children will take an incredibly long time to grow up.</description>
+		<iconPath>UI/Icons/Genes/FO_ExtremelySlowAging</iconPath>
+		<exclusionTags>
+			<li>AG_Aging</li>
+			<li>Aging</li>
+		</exclusionTags>
+		<displayCategory>Healing</displayCategory>
+		<displayOrderInCategory>502</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<customEffectDescriptions>
+			<li>Age will advance at 4% speed.</li>
+		</customEffectDescriptions>
+		<biologicalAgeTickFactorFromAgeCurve>
+			<points>
+				<li>(13, 0.04)</li>
+				<li>(18, 0.04)</li>
+			</points>
+		</biologicalAgeTickFactorFromAgeCurve>
+		<selectionWeight>0</selectionWeight>
+	</GeneDef>
+	
+</Defs>

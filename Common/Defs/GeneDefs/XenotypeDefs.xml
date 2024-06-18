@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<XenotypeDef>
+		<defName>FO_Forsaken</defName>
+		<label>forsaken</label>
+		<description>The legacy of a fallen empire, with a distant link to the humanoid races of earth and beyond. Other than the fact that they began to awaken over the past century and that they terraformed forsaken crags onto some rimworlds at some point in the past, no one knows much else about what they are, where they are from or fundamentals behind their technology, which seems to bridge the gap between science and magic.</description>
+		<descriptionShort>A distant relative of the humanoid races of earth and beyond. There is very little known about them.</descriptionShort>
+		<iconPath>UI/XenotypeIcons/Forsaken</iconPath>
+		<inheritable>true</inheritable>
+		<genes>
+			<li>UVSensitivity_Mild</li>
+			<li>Hair_BaldOnly</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Headbone_Human</li>
+			<li>Body_Standard</li>
+			<li>Body_Thin</li>
+			<li>Body_Hulk</li>
+			<li>Sterile</li>
+			<li>Hair_SnowWhite</li>
+			<li>Hair_Gray</li>
+			<li>Hair_DarkBlack</li>
+			<li>Hair_InkBlack</li>
+			<li>Skin_SlateGray</li>
+			<li>Skin_InkBlack</li>
+			<li>DarkVision</li>
+			<li>FO_Body</li>
+			<li>FO_Head</li>
+			<li>FO_Eyes</li>
+			<li>FO_BodyEmblem</li>
+			<li>FO_HeadEmblem</li>
+			<li>FO_HornsBull</li>
+			<li>FO_HornsSheep</li>
+			<li>FO_HornsReptilian</li>
+			<li>FO_HornsCrown</li>
+			<li>FO_HornsDevil</li>
+			<li>FO_HornsGoat</li>
+			<li>FO_ForsakenBlood</li>
+			<li>FO_ExtremelySlowAging</li>
+		</genes>
+	</XenotypeDef>
+
+</Defs>
