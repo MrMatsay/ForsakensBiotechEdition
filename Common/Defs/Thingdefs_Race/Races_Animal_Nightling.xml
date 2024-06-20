@@ -101,6 +101,7 @@
 			<gestationPeriodDays>22.5</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>Advanced</trainability>
+			<packAnimal>true</packAnimal>
 			<renderTree>Misc</renderTree>
 			<wildness>0.75</wildness>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
@@ -137,6 +138,7 @@
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<wildBiomes/>
 		</race>
 		<tradeTags>
 			<li>StandardAnimal</li>

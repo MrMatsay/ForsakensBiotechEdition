@@ -215,7 +215,7 @@
 				<drawData>
 					<defaultData>
 						<layer>54</layer>
-						<!-- <offset>(0, 0, -0.25)</offset> -->
+						<offset>(0, 0, -0.25)</offset>
 					</defaultData>
 				</drawData>
 			</li>
@@ -230,7 +230,7 @@
 				<drawData>
 					<defaultData>
 						<layer>54</layer>
-						<!-- <offset>(0, 0, -0.25)</offset> -->
+						<offset>(0, 0, -0.25)</offset>
 						<flip>true</flip>
 					</defaultData>
 					<dataWest>

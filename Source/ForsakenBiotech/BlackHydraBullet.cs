@@ -10,7 +10,7 @@ namespace ForsakenBiotech
 		protected override void Impact(Thing hitThing, bool blockedByShield = false)
 		{
 			base.Impact(hitThing, false);
-			Map map = hitThing.Map;
+			Map map = hitThing?.Map;
 			if (this.def != null && hitThing != null && map != null)
 			{
 				Vector2 vector = Rand.UnitVector2 * Rand.Range(0f, 4f);

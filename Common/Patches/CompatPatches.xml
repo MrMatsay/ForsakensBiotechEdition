@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Royalty compat patch -->
+	<Operation Class="PatchOperationFindMod">
+		<success>Always</success>
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
+			<value>
+				<li>ForsakenPlayerColony</li>
+			</value>
+		</match>
+	</Operation>
+  
+	<!-- Alpha Animals compat patch -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Animals</li>
+		</mods>
+		<!-- If Alpha Animals is found, use their version of the Nightling -->
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- Change Label -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/PawnKindDef[defName = "NightlingF"]/label</xpath>
+					<value>
+						<label>Abandoned Hellhound</label>
+					</value>
+				</li>
+				<!-- No NightlingF in the Shop -->
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName = "NightlingF"]/tradeTags</xpath>
+				</li>
+				<!-- AA Nightlings in Scenario -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ScenarioDef[defName = "ForsakenCrashlanded" or defName = "LostForsakens"]/scenario/parts/li[@Class="ScenPart_StartingAnimal"]</xpath>
+					<value>
+						<li Class="ScenPart_StartingAnimal">
+							<def>StartingAnimal</def>
+							<animalKind>AA_Nightling</animalKind>
+							<count>1</count>
+						</li>
+					</value>
+				</li>
+				<!-- Alpha Animals uses AA_EggNightlingFertilized -->
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName = "EggNightlingFertilized"]</xpath>
+				</li>
+				<!-- Avoid double Eggs in the storage, remove EggLayer -->
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName = "NightlingF"]/comps</xpath>
+				</li>
+			</operations>
+		</match>
+		<!-- If not found, let the Nightling spawn naturally in a few biomes -->
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+				<!-- <li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName = "TemperateForest"]/wildAnimals</xpath>
+					<value>
+						<NightlingF>0.015</NightlingF>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName = "BorealForest"]/wildAnimals</xpath>
+					<value>
+						<NightlingF>0.014</NightlingF>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName = "AridShrubland"]/wildAnimals</xpath>
+					<value>
+						<NightlingF>0.012</NightlingF>
+					</value>
+				</li> -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="NightlingF"]/race/wildBiomes</xpath>
+					<value>
+						<IceSheet>0.01</IceSheet>
+						<SeaIce>0.01</SeaIce>
+						<BorealForest>0.1</BorealForest>
+						<Tundra>0.03</Tundra>
+						<ColdBog>0.03</ColdBog>
+						<TemperateForest>0.1</TemperateForest>
+						<TemperateSwamp>0.05</TemperateSwamp>
+						<TropicalRainforest>0.05</TropicalRainforest>
+						<TropicalSwamp>0.04</TropicalSwamp>
+						<AridShrubland>0.04</AridShrubland>
+						<Desert>0.03</Desert>
+						<ExtremeDesert>0.02</ExtremeDesert>
+					</value>
+				</li>
+				<!-- Compat for Alpha Biomes pre-added -->
+				<li Class="PatchOperationAdd" MayRequire="sarg.alphabiomes">
+					<xpath>/Defs/ThingDef[defName="NightlingF"]/race/wildBiomes</xpath>
+					<value>
+						<AB_RockyCrags>0.4</AB_RockyCrags>
+						<AB_TarPits>0.01</AB_TarPits>
+						<AB_PyroclasticConflagration>0.05</AB_PyroclasticConflagration>
+					</value>
+				</li>
+			</operations>
+		</nomatch>
+	</Operation>
+
+	<!-- Alpha Biomes compat patch -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Biomes</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- This comes from Alpha Biomes and was supposed to apply if Forsakens mod is found -->
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="AB_WildRadagast"]/plant</xpath>
+					<value>
+						<harvestYield>10</harvestYield>
+						<harvestWork>250</harvestWork>
+						<harvestTag>Standard</harvestTag>
+						<harvestAfterGrowth>0.30</harvestAfterGrowth>
+						<harvestedThingDef>RagadastFruit</harvestedThingDef>
+					</value>
+				</li>
+				<!-- Restrict the Forsaken faction to lore-appropriate biomes -->
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/FactionDef[defName = "Forsakens"]</xpath>
+					<value>
+						<li Class="VFECore.FactionDefExtension">			
+							<allowedBiomes>
+								<li>AB_RockyCrags</li>
+								<li>AB_PyroclasticConflagration</li>
+							</allowedBiomes>			
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!-- Alpha Genes compat patch -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Genes</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- Changes to Forsaken Body Gene -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName = "FO_Body"]/displayCategory</xpath>
+					<value>
+						<displayCategory>AG_Cosmetic_Bodies</displayCategory>
+					</value>
+				</li>
+				<!-- Changes to Forsaken Blood Gene -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName = "FO_ForsakenBlood"]/displayCategory</xpath>
+					<value>
+						<displayCategory>AG_BloodType</displayCategory>
+					</value>
+				</li>
+				<!-- Switching Forsaken Horns Genes' display category -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/GeneDef[
+						defName = "FO_HornsBull" 
+						or defName = "FO_HornsSheep" 
+						or defName = "FO_HornsReptilian" 
+						or defName = "FO_HornsDevil"
+						or defName = "FO_HornsCrown"
+						or defName = "FO_HornsGoat"
+					]</xpath>
+					<value>
+						<displayCategory>AG_Cosmetic_Horns</displayCategory>
+					</value>
+				</li>
+				<!-- Adding melee attack to relevant Forsaken Horns Genes -->
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/GeneDef[
+						defName = "FO_HornsBull" 
+						or defName = "FO_HornsSheep" 
+						or defName = "FO_HornsReptilian" 
+						or defName = "FO_HornsDevil"
+					]</xpath>
+					<value>
+						<li Class="VanillaGenesExpanded.GeneExtension">
+							<hediffsToBodyParts>
+								<li>
+									<hediff>AG_HornAttack</hediff>
+									<bodyparts>
+										<li>Head</li>
+									</bodyparts>
+								</li>
+							</hediffsToBodyParts>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/GeneDef[
+						defName = "FO_HornsBull" 
+						or defName = "FO_HornsSheep" 
+						or defName = "FO_HornsReptilian" 
+						or defName = "FO_HornsDevil"
+					]</xpath>
+					<value>
+						<customEffectDescriptions>
+							<li>Increases the carrier's dps by adding a 16 Stab damage, 2 seconds cooldown melee attack</li>
+						</customEffectDescriptions>
+					</value>
+				</li>
+				<!-- Updating Forsaken Horns Genes' description -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName = "FO_HornsBull"]/description</xpath>
+					<value>
+						<description>Carriers of this gene grow two huge bull-like horns with yellow tips protruding from the forehead as well as several smaller horns on their chin and atop their head. These are not purely cosmetic, as they can be used for offensive purposes.</description>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName = "FO_HornsSheep"]/description</xpath>
+					<value>
+						<description>Carriers of this gene grow two huge sheep-like horns with yellow tips protruding from the forehead. These are not purely cosmetic, as they can be used for offensive purposes.</description>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName = "FO_HornsReptilian"]/description</xpath>
+					<value>
+						<description>Carriers of this gene grow two reptilian horns with yellow tips protruding from the forehead. These are not purely cosmetic, as they can be used for offensive purposes.</description>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName = "FO_HornsDevil"]/description</xpath>
+					<value>
+						<description>Carriers of this gene grow two devilish horns with yellow tips protruding from the forehead. These are not purely cosmetic, as they can be used for offensive purposes.</description>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName = "FO_HornsCrown"]/description</xpath>
+					<value>
+						<description>Carriers of this gene grow four of small horns with yellow tips protruding from the forehead. These are not long enough to be practical in a fight.</description>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName = "FO_HornsGoat"]/description</xpath>
+					<value>
+						<description>Carriers of this gene grow two straight goat horns with yellow tips protruding from the forehead. These are not long enough to be practical in a fight.</description>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!-- A Dog Said... compat patch -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>A Dog Said... Animal Prosthetics</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- Wound healing recipe -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name = "OldWoundsAnimal"]/recipeUsers</xpath>
+					<value>
+						<li>NightlingF</li>
+					</value>
+				</li>
+				<!-- Organ installing recipes -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[
+						defName = "InstallBionicAnimalStomach" or 
+						defName = "InstallBionicAnimalKidney" or 
+						defName = "InstallBionicAnimalLung" or 
+						defName = "InstallBionicAnimalHeart" or 
+						defName = "InstallAnimalBrainStimulator" or 
+						defName = "InstallSpineAnimalBionic" or 
+						defName ="InstallSpineAnimalSimple" or 
+						defName = "InstallJawAnimalBionic" or 
+						defName ="InstallJawAnimalSimple" or 
+						defName = "InstallBionicEyeAnimal" or 
+						defName = "InstallEarAnimalSimple" or 
+						defName ="InstallEarAnimalBionic"
+					]/recipeUsers</xpath>
+					<value>
+						<li>NightlingF</li>
+					</value>
+				</li>
+				<!-- Leg installing recipes -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[
+						defName = "InstallPegLegAnimal" or 
+						defName ="InstallSimpleProstheticLegAnimal" or 
+						defName ="InstallBionicLegAnimal"
+					]/recipeUsers</xpath>
+					<value>
+						<li>NightlingF</li>
+					</value>
+				</li>
+				<!-- Tail installing recipe -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "InstallSimpleProstheticTailAnimal"]/recipeUsers</xpath>
+					<value>
+						<li>NightlingF</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!-- A Dog Said...2 compat patch -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>A Dog Said... Animal Prosthetics 2</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[
+						@Name="ADS_Cat3" or
+						@Name="ADS_Cat2" or
+						@Name="ADS_Cat1"
+					]/recipeUsers</xpath>
+					<value>
+						<li>NightlingF</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
