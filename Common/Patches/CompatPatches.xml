@@ -58,24 +58,6 @@
 		<!-- If not found, let the Nightling spawn naturally in a few biomes -->
 		<nomatch Class="PatchOperationSequence">
 			<operations>
-				<!-- <li Class="PatchOperationAdd">
-					<xpath>/Defs/BiomeDef[defName = "TemperateForest"]/wildAnimals</xpath>
-					<value>
-						<NightlingF>0.015</NightlingF>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/BiomeDef[defName = "BorealForest"]/wildAnimals</xpath>
-					<value>
-						<NightlingF>0.014</NightlingF>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/BiomeDef[defName = "AridShrubland"]/wildAnimals</xpath>
-					<value>
-						<NightlingF>0.012</NightlingF>
-					</value>
-				</li> -->
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="NightlingF"]/race/wildBiomes</xpath>
 					<value>

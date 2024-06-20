@@ -1,6 +1,6 @@
 <ModMetaData>
 	<name>Forsakens Biotech Edition</name>
-	<author>Major_Quadrangle</author>
+	<author>Major_Quadrangle, Matsay</author>
 	<supportedVersions>
 		<li>1.4</li>
 		<li>1.5</li>
@@ -17,6 +17,9 @@
 			
 		</li>
 	</modDependencies>
+	<loadBefore>
+		<li>SamBucher.ADogSaidAnimalProsthetics2</li>
+	</loadBefore>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
 		<li>Ludeon.RimWorld.Royalty</li>
@@ -28,6 +31,7 @@
 		<li>sarg.alphabiomes</li>
 		<li>vanillaracesexpanded.android</li>
 		<li>sarg.alphagenes</li>
+		<li>spoonshortage.adogsaidanimalprosthetics</li>
 	</loadAfter>
 	<packageId>quad.forsakens</packageId>
 	<description>There once was a race with some kind of link to the humanoid races of earth and beyond known as the Enlightened. Having been on the brink of perfection, they let their ambition and hunger for true wisdom and power blind them. With betrayals and events beyond mortal comprehension leading them down a path of desolation, they made one final mistake, leading to their fall, and the universe lost its most advanced biological race. But from their ashes rose the Forsaken(s), a broken, decaying remnant of what was once a nigh-perfect spacefaring nation, now bathed in hatred and cosmic curses for the magnitude of their betrayal. Now their fallen armies rise once again and march to reclaim what was once denied to them.

@@ -22,10 +22,6 @@
 			<IncomingDamageFactor>1.25</IncomingDamageFactor>
 		</statFactors>
 		<iconPath>UI/Icons/Genes/FO_Body</iconPath>
-		<!-- <graphicData>
-			<drawLoc>Tailbone</drawLoc>
-			<fur>FO_Body</fur>
-		</graphicData> -->
 		<fur>FO_Body</fur>
 		<skinIsHairColor>false</skinIsHairColor>
 		<tattoosVisible>true</tattoosVisible>
@@ -55,13 +51,6 @@
 		<displayCategory>Cosmetic</displayCategory>
 		<iconPath>UI/Icons/Genes/FO_Head</iconPath>
 		<displayOrderInCategory>101</displayOrderInCategory>
-		<!-- <graphicData>
-			<useSkinShader>true</useSkinShader>
-			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/FO_Head/FO_Head</graphicPath>
-			<visibleNorth>true</visibleNorth>
-			<layer>PostSkin</layer>
-			<colorType>Skin</colorType>
-		</graphicData> -->
 		<renderNodeProperties>
 			<li>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
@@ -70,6 +59,8 @@
 				<texPaths>
 					<li>Things/Pawn/Humanlike/HeadAttachments/FO_Head/FO_Head</li>
 				</texPaths>
+				<useSkinShader>true</useSkinShader>
+				<colorType>Skin</colorType>
 				<visibleFacing>
 					<li>East</li>
 					<li>South</li>
@@ -100,11 +91,6 @@
 			<MeleeDamageFactor>1.25</MeleeDamageFactor>
 		</statFactors>
 		<selectionWeight>0</selectionWeight>
-		<!-- <graphicData>
-			<graphicPath>Things/Pawn/Humanlike/BodyAttachments/FO_BodyEmblem/FO_BodyEmblem</graphicPath>
-			<visibleNorth>false</visibleNorth>
-			<drawLoc>Tailbone</drawLoc>
-		</graphicData> -->
 		<renderNodeProperties>
 			<li>
 				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
@@ -131,22 +117,7 @@
 				</drawData>
 			</li>
 		</renderNodeProperties>
-		<modExtensions>
-			<!-- <li Class="VanillaGenesExpanded.GeneExtension">
-				<offsets>
-					<south>
-						<bodyTypes>
-							<Male>(0, 0.01, -0.14)</Male>
-							<Female>(0, 0.01, -0.15)</Female>
-							<Thin>(0, 0.01, -0.13)</Thin>
-							<Hulk>(0, 0.01, -0.2)</Hulk>
-							<Fat>(0, 0.01, -0.1)</Fat>
-							<Child>(0, 0.01, -0.01)</Child>
-						</bodyTypes>
-					</south>
-				</offsets>
-			</li> -->
-		</modExtensions>
+		<modExtensions/>
 	</GeneDef>
 	
 	<GeneDef>
@@ -163,11 +134,6 @@
 		</statFactors>
 		<iconPath>UI/Icons/Genes/FO_Emblem</iconPath>
 		<displayOrderInCategory>103</displayOrderInCategory>
-		<!-- <graphicData>
-			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/FO_HeadEmblem/FO_HeadEmblem</graphicPath>
-			<visibleNorth>false</visibleNorth>
-			<layer>PostSkin</layer>
-		</graphicData> -->
 		<renderNodeProperties>
 			<li>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
@@ -196,17 +162,9 @@
 		<iconPath>UI/Icons/Genes/FO_Eyes</iconPath>
 		<description>Carriers of this gene have four yellow eyes, with two smaller ones under two larger ones.</description>
 		<displayOrderInCategory>1</displayOrderInCategory>
-		<!-- <graphicData>
-			<drawScale>0.4</drawScale>
-			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/FO_Eyes/FO_Eyes</graphicPath>
-			<visibleNorth>false</visibleNorth>
-			<drawOnEyes>true</drawOnEyes>
-			<layer>PostTattoo</layer>
-		</graphicData> -->
 		<renderNodeProperties>
 			<li Class="PawnRenderNodeProperties_Eye">
 				<texPath>Things/Pawn/Humanlike/HeadAttachments/FO_Eyes/FO_Eyes</texPath>
-				<!-- <texPathFemale>Things/Parts/EyeF</texPathFemale> -->
 				<anchorTag>RightEye</anchorTag>
 				<rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<parentTagDef>Head</parentTagDef>
@@ -221,7 +179,6 @@
 			</li>
 			<li Class="PawnRenderNodeProperties_Eye">
 				<texPath>Things/Pawn/Humanlike/HeadAttachments/FO_Eyes/FO_Eyes</texPath>
-				<!-- <texPathFemale>Things/Parts/EyeF</texPathFemale> -->
 				<anchorTag>LeftEye</anchorTag>
 				<rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<parentTagDef>Head</parentTagDef>

@@ -1,95 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ResearchTabDef>
-    <defName>Forsakens</defName>
-    <label>Forsakens</label>
-  </ResearchTabDef>
+	<ResearchTabDef>
+		<defName>Forsakens</defName>
+		<label>Forsakens</label>
+	</ResearchTabDef>
 
-  <ResearchProjectDef>
-    <defName>FO_NeolithicForsakenWeapons</defName>
-    <label>basic forsakens weapons</label>
-    <tab>Forsakens</tab>
-    <techLevel>Neolithic</techLevel>
-    <description>Simple, traditional Forsaken weapons, usable by even the most primitives races.</description>
-    <baseCost>950</baseCost>
-    <researchViewX>0</researchViewX>
-    <researchViewY>0</researchViewY>
-  </ResearchProjectDef>
+	<ResearchProjectDef>
+		<defName>FO_NeolithicForsakenWeapons</defName>
+		<label>basic forsakens weapons</label>
+		<tab>Forsakens</tab>
+		<techLevel>Neolithic</techLevel>
+		<description>Simple, traditional Forsaken weapons, usable by even the most primitives races.</description>
+		<baseCost>950</baseCost>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
 
-  <ResearchProjectDef>
-    <defName>FO_ForsakenWeapons</defName>
-    <label>forsakens weapons</label>
-    <tab>Forsakens</tab>
-    <techLevel>Spacer</techLevel>
-    <description>Learn to produce Forsaken weaponry.</description>
-    <baseCost>7000</baseCost>
-    <prerequisites>
-      <li>FO_NeolithicForsakenWeapons</li>
-      <li>ChargedShot</li>
-    </prerequisites>
-    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-    <requiredResearchFacilities>
-      <li>MultiAnalyzer</li>
-    </requiredResearchFacilities>
-    <researchViewX>1</researchViewX>
-    <researchViewY>0</researchViewY>
-  </ResearchProjectDef>
+	<ResearchProjectDef>
+		<defName>FO_ForsakenWeapons</defName>
+		<label>forsakens weapons</label>
+		<tab>Forsakens</tab>
+		<techLevel>Spacer</techLevel>
+		<description>Learn to produce Forsaken weaponry.</description>
+		<baseCost>7000</baseCost>
+		<prerequisites>
+			<li>FO_NeolithicForsakenWeapons</li>
+			<li>ChargedShot</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
 
-  <ResearchProjectDef>
-    <defName>FO_BasicForsakenArmors</defName>
-    <label>basic forsakens armors</label>
-    <tab>Forsakens</tab>
-    <techLevel>Spacer</techLevel>
-    <description>Learn to produce Forsaken clothing.</description>
-    <baseCost>4500</baseCost>
-    <prerequisites>
-      <li>Fabrication</li>
-    </prerequisites>
-    <researchViewX>0</researchViewX>
-    <researchViewY>1</researchViewY>
-  </ResearchProjectDef>
+	<ResearchProjectDef>
+		<defName>FO_BasicForsakenArmors</defName>
+		<label>basic forsakens armors</label>
+		<tab>Forsakens</tab>
+		<techLevel>Spacer</techLevel>
+		<description>Learn to produce Forsaken clothing.</description>
+		<baseCost>4500</baseCost>
+		<prerequisites>
+			<li>Fabrication</li>
+		</prerequisites>
+		<researchViewX>0</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
 
-  <ResearchProjectDef>
-    <defName>FO_ForsakenArmors</defName>
-    <label>forsakens armors</label>
-    <tab>Forsakens</tab>
-    <techLevel>Ultra</techLevel>
-    <description>Learn to produce Forsaken armor.</description>
-    <baseCost>8000</baseCost>
-    <prerequisites>
-      <li>PoweredArmor</li>
-      <li>FO_BasicForsakenArmors</li>
-    </prerequisites>
-    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-    <requiredResearchFacilities>
-      <li>MultiAnalyzer</li>
-    </requiredResearchFacilities>
-    <researchViewX>1</researchViewX>
-    <researchViewY>1</researchViewY>
-  </ResearchProjectDef>
+	<ResearchProjectDef>
+		<defName>FO_ForsakenArmors</defName>
+		<label>forsakens armors</label>
+		<tab>Forsakens</tab>
+		<techLevel>Ultra</techLevel>
+		<description>Learn to produce Forsaken armor.</description>
+		<baseCost>8000</baseCost>
+		<prerequisites>
+			<li>PoweredArmor</li>
+			<li>FO_BasicForsakenArmors</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>1</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
 
-  <ResearchProjectDef>
-    <defName>FO_Drugs</defName>
-    <label>forsakens drugs</label>
-    <tab>Forsakens</tab>
-    <techLevel>Spacer</techLevel>
-    <description>Learn to produce Forsaken combat-enhancing drugs.</description>
-    <baseCost>4000</baseCost>
-    <prerequisites>
-      <li>DrugProduction</li>
-    </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>2</researchViewY>
-  </ResearchProjectDef>
+	<ResearchProjectDef>
+		<defName>FO_Drugs</defName>
+		<label>forsakens drugs</label>
+		<tab>Forsakens</tab>
+		<techLevel>Spacer</techLevel>
+		<description>Learn to produce Forsaken combat-enhancing drugs.</description>
+		<baseCost>4000</baseCost>
+		<prerequisites>
+			<li>DrugProduction</li>
+		</prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
 
-  <ResearchProjectDef>
-    <defName>FO_Plants</defName>
-    <label>forsakens plants</label>
-    <tab>Forsakens</tab>
-    <techLevel>Medieval</techLevel>
-    <description>Learn to sow Forsaken plants.</description>
-    <baseCost>900</baseCost>
-    <researchViewX>2</researchViewX>
-    <researchViewY>2</researchViewY>
-  </ResearchProjectDef>
+	<ResearchProjectDef>
+		<defName>FO_Plants</defName>
+		<label>forsakens plants</label>
+		<tab>Forsakens</tab>
+		<techLevel>Medieval</techLevel>
+		<description>Learn to sow Forsaken plants.</description>
+		<baseCost>900</baseCost>
+		<researchViewX>2</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
 </Defs>

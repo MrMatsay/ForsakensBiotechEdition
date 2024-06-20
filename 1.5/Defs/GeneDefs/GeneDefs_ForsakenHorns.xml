@@ -8,29 +8,25 @@
 		<iconPath>UI/Icons/Genes/FO_HornsBull</iconPath>
 		<displayOrderInCategory>201</displayOrderInCategory>
 		<selectionWeight>0</selectionWeight>
-		<!-- <graphicData>
-			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/FO_HornsBull/FO_HornsBull</graphicPath>
-			<layer>PostHeadgear</layer>
-		</graphicData> -->
-    <renderNodeProperties>
-      <li>
-        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPaths>
-          <li>Things/Pawn/Humanlike/HeadAttachments/FO_HornsBull/FO_HornsBull</li>
-        </texPaths>
-        <color>(128, 128, 128)</color>
-        <parentTagDef>Head</parentTagDef>
-        <drawData>
-          <defaultData>
-            <layer>80</layer>
-          </defaultData>
-          <dataNorth>
-            <layer>10</layer>
-          </dataNorth>
-        </drawData>
-      </li>
-    </renderNodeProperties>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPaths>
+					<li>Things/Pawn/Humanlike/HeadAttachments/FO_HornsBull/FO_HornsBull</li>
+				</texPaths>
+				<color>(128, 128, 128)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>55</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
 	</GeneDef>
 	
 	<GeneDef ParentName="GeneHeadboneBase">
@@ -40,29 +36,25 @@
 		<iconPath>UI/Icons/Genes/FO_HornsSheep</iconPath>
 		<displayOrderInCategory>202</displayOrderInCategory>
 		<selectionWeight>0</selectionWeight>
-		<!-- <graphicData>
-			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/FO_HornsSheep/FO_HornsSheep</graphicPath>
-			<layer>PostHeadgear</layer>
-		</graphicData> -->
-    <renderNodeProperties>
-      <li>
-        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPaths>
-          <li>Things/Pawn/Humanlike/HeadAttachments/FO_HornsSheep/FO_HornsSheep</li>
-        </texPaths>
-        <color>(128, 128, 128)</color>
-        <parentTagDef>Head</parentTagDef>
-        <drawData>
-          <defaultData>
-            <layer>80</layer>
-          </defaultData>
-          <dataNorth>
-            <layer>10</layer>
-          </dataNorth>
-        </drawData>
-      </li>
-    </renderNodeProperties>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPaths>
+					<li>Things/Pawn/Humanlike/HeadAttachments/FO_HornsSheep/FO_HornsSheep</li>
+				</texPaths>
+				<color>(128, 128, 128)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>55</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
 	</GeneDef>
 	
 	<GeneDef ParentName="GeneHeadboneBase">
@@ -72,29 +64,25 @@
 		<iconPath>UI/Icons/Genes/FO_HornsReptilian</iconPath>
 		<displayOrderInCategory>203</displayOrderInCategory>
 		<selectionWeight>0</selectionWeight>
-		<!-- <graphicData>
-			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/FO_HornsReptilian/FO_HornsReptilian</graphicPath>
-			<layer>PostHeadgear</layer>
-		</graphicData> -->
-    <renderNodeProperties>
-      <li>
-        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPaths>
-          <li>Things/Pawn/Humanlike/HeadAttachments/FO_HornsReptilian/FO_HornsReptilian</li>
-        </texPaths>
-        <color>(128, 128, 128)</color>
-        <parentTagDef>Head</parentTagDef>
-        <drawData>
-          <defaultData>
-            <layer>80</layer>
-          </defaultData>
-          <dataNorth>
-            <layer>10</layer>
-          </dataNorth>
-        </drawData>
-      </li>
-    </renderNodeProperties>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPaths>
+					<li>Things/Pawn/Humanlike/HeadAttachments/FO_HornsReptilian/FO_HornsReptilian</li>
+				</texPaths>
+				<color>(128, 128, 128)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>55</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
 	</GeneDef>
 	
 	<GeneDef ParentName="GeneHeadboneBase">
@@ -104,29 +92,25 @@
 		<iconPath>UI/Icons/Genes/FO_HornsCrown</iconPath>
 		<displayOrderInCategory>204</displayOrderInCategory>
 		<selectionWeight>0</selectionWeight>
-		<!-- <graphicData>
-			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/FO_HornsCrown/FO_HornsCrown</graphicPath>
-			<layer>PostHeadgear</layer>
-		</graphicData> -->
-    <renderNodeProperties>
-      <li>
-        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPaths>
-          <li>Things/Pawn/Humanlike/HeadAttachments/FO_HornsCrown/FO_HornsCrown</li>
-        </texPaths>
-        <color>(128, 128, 128)</color>
-        <parentTagDef>Head</parentTagDef>
-        <drawData>
-          <defaultData>
-            <layer>80</layer>
-          </defaultData>
-          <dataNorth>
-            <layer>10</layer>
-          </dataNorth>
-        </drawData>
-      </li>
-    </renderNodeProperties>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPaths>
+					<li>Things/Pawn/Humanlike/HeadAttachments/FO_HornsCrown/FO_HornsCrown</li>
+				</texPaths>
+				<color>(128, 128, 128)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>55</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
 	</GeneDef>
 	
 	<GeneDef ParentName="GeneHeadboneBase">
@@ -136,29 +120,25 @@
 		<iconPath>UI/Icons/Genes/FO_HornsDevil</iconPath>
 		<displayOrderInCategory>205</displayOrderInCategory>
 		<selectionWeight>0</selectionWeight>
-		<!-- <graphicData>
-			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/FO_HornsDevil/FO_HornsDevil</graphicPath>
-			<layer>PostHeadgear</layer>
-		</graphicData> -->
-    <renderNodeProperties>
-      <li>
-        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPaths>
-          <li>Things/Pawn/Humanlike/HeadAttachments/FO_HornsDevil/FO_HornsDevil</li>
-        </texPaths>
-        <color>(128, 128, 128)</color>
-        <parentTagDef>Head</parentTagDef>
-        <drawData>
-          <defaultData>
-            <layer>80</layer>
-          </defaultData>
-          <dataNorth>
-            <layer>10</layer>
-          </dataNorth>
-        </drawData>
-      </li>
-    </renderNodeProperties>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPaths>
+					<li>Things/Pawn/Humanlike/HeadAttachments/FO_HornsDevil/FO_HornsDevil</li>
+				</texPaths>
+				<color>(128, 128, 128)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>55</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
 	</GeneDef>
 	
 	<GeneDef ParentName="GeneHeadboneBase">
@@ -168,29 +148,25 @@
 		<iconPath>UI/Icons/Genes/FO_HornsGoat</iconPath>
 		<displayOrderInCategory>206</displayOrderInCategory>
 		<selectionWeight>0</selectionWeight>
-		<!-- <graphicData>
-			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/FO_HornsGoat/FO_HornsGoat</graphicPath>
-			<layer>PostHeadgear</layer>
-		</graphicData> -->
-    <renderNodeProperties>
-      <li>
-        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPaths>
-          <li>Things/Pawn/Humanlike/HeadAttachments/FO_HornsGoat/FO_HornsGoat</li>
-        </texPaths>
-        <color>(128, 128, 128)</color>
-        <parentTagDef>Head</parentTagDef>
-        <drawData>
-          <defaultData>
-            <layer>80</layer>
-          </defaultData>
-          <dataNorth>
-            <layer>10</layer>
-          </dataNorth>
-        </drawData>
-      </li>
-    </renderNodeProperties>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPaths>
+					<li>Things/Pawn/Humanlike/HeadAttachments/FO_HornsGoat/FO_HornsGoat</li>
+				</texPaths>
+				<color>(128, 128, 128)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>55</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
 	</GeneDef>
 	
 </Defs>

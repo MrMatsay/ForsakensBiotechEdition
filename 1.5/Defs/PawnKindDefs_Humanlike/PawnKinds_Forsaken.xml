@@ -22,6 +22,7 @@
 		<apparelTags>
 			<li>IndustrialBasic</li>
 		</apparelTags>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
 		<apparelMoney>
 			<min>350</min>
 			<max>950</max>

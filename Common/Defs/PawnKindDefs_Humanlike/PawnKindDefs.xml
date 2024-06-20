@@ -41,8 +41,10 @@
 			<max>10000</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>WForsaken</li>
+			<li>WForsakenKing</li>
 		</weaponTags>
+		<forceWeaponQuality>Masterwork</forceWeaponQuality>
+		<biocodeWeaponChance>1</biocodeWeaponChance>
 		<techHediffsMoney>
 			<min>10000</min>
 			<max>20000</max>

@@ -39,8 +39,8 @@
 			<researchPrerequisite>FO_ForsakenWeapons</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
+	
 	<!-- ===================[Sniper]=========================== -->
-
 	<ThingDef ParentName="BaseForsaken">
 		<defName>ForsakenSniper</defName>
 		<label>Forsaken Sniping Rifle</label>
@@ -110,7 +110,6 @@
 	</ThingDef>
 
 	<!-- ===================[Shotgun]=========================== -->
-
 	<ThingDef ParentName="BaseForsaken">
 		<defName>ForsakenShotGun</defName>
 		<label>forsaken shotgun</label>
@@ -190,7 +189,6 @@
 	</ThingDef>
 
 	<!-- ====================[Assault Rifle]========================== -->
-
 	<ThingDef ParentName="BaseForsaken">
 		<defName>ForsakenAR</defName>
 		<label>forsaken assault rifle</label>
@@ -267,7 +265,6 @@
 	</ThingDef>
 
 	<!-- ====================[Sword]========================== -->
-
 	<ThingDef ParentName="BaseForsaken">
 		<defName>ForsakenLongBlade</defName>
 		<label>forsaken long blade</label>
@@ -318,7 +315,6 @@
 	</ThingDef>
 
 	<!-- ====================[[Axe]]========================== -->
-
 	<ThingDef ParentName="BaseForsaken">
 		<defName>ForsakenBattle</defName>
 		<label>forsaken battle axe</label>
@@ -373,7 +369,6 @@
 	</ThingDef>
 
 	<!-- ====================[[Bulk Sword]]========================== -->
-
 	<ThingDef ParentName="BaseForsaken">
 		<defName>ForsakenBulksword</defName>
 		<label>forsaken bulk sword</label>
@@ -426,7 +421,6 @@
 	</ThingDef>
 
 	<!-- ====================[[Forsaken Spear]]========================== -->
-
 	<ThingDef ParentName="BaseForsaken">
 		<defName>FSpear</defName>
 		<label>forsaken spear</label>
@@ -477,7 +471,6 @@
 	</ThingDef>
 
 	<!-- ====================[[Forsaken Bow]]========================== -->
-
 	<ThingDef ParentName="BaseForsaken">
 		<defName>FBow</defName>
 		<label>forsaken bow</label>
@@ -571,6 +564,7 @@
 			<AccuracyLong>0.65</AccuracyLong>
 			<RangedWeapon_Cooldown>7.4</RangedWeapon_Cooldown>
 		</statBases>
+		<relicChance>1</relicChance>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -591,6 +585,7 @@
 		<weaponTags>
 			<li>ForsakenRanged</li>
 			<li>WForsaken</li>
+			<li>WForsakenKing</li>
 			<li>Ultratech</li>
 		</weaponTags>
 		<weaponClasses>
@@ -609,6 +604,10 @@
 				<minQualityForArtistic>Excellent</minQualityForArtistic>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+            <li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_HydraBlast</defName>

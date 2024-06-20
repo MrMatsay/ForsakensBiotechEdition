@@ -3,8 +3,8 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>NightlingF</defName>
 		<label>nightling</label>
-		<description>A large deformed beast with rows of quills on its back. The rim is a violent place and the dead are a common sight. 
-			But over the years, disturbing reports of ravaged corpses started to increase in surprising numbers, all gut-wrenching and skewered with spikes. 
+		<description>A large deformed beast with rows of quills on its back. The rim is a violent place and the dead are a common sight.
+			But over the years, disturbing reports of ravaged corpses started to increase in surprising numbers, all gut-wrenching and skewered with spikes.
 			Each dawn shedding light to the aftermath of the night before. The locals soon learned to fear the dark, and the nightmares within them.</description>
 		<statBases>
 			<MoveSpeed>6.00</MoveSpeed>
