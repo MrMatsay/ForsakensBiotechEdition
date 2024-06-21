@@ -168,7 +168,7 @@
 				<anchorTag>RightEye</anchorTag>
 				<rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<parentTagDef>Head</parentTagDef>
-				<drawSize>0.4</drawSize>
+				<drawSize>0.32</drawSize>
 				<side>Right</side>
 				<drawData>
 					<defaultData>
@@ -182,7 +182,7 @@
 				<anchorTag>LeftEye</anchorTag>
 				<rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<parentTagDef>Head</parentTagDef>
-				<drawSize>0.4</drawSize>
+				<drawSize>0.32</drawSize>
 				<side>Left</side>
 				<drawData>
 					<defaultData>
