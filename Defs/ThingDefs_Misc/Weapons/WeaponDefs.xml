@@ -322,7 +322,7 @@
 		<graphicData>
 			<texPath>Weapons/BattleAxe/BattleAxe</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.420</drawSize>
+			<!--<drawSize>1.420</drawSize>-->
 		</graphicData>
 		<weaponTags>
 			<li>ForsakenMelee</li>
@@ -376,7 +376,7 @@
 		<graphicData>
 			<texPath>Weapons/Swingie</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.3</drawSize>
+			<!--<drawSize>1.3</drawSize>-->
 		</graphicData>
 		<techLevel>Spacer</techLevel>
 		<weaponTags>
@@ -478,7 +478,7 @@
 		<graphicData>
 			<texPath>Weapons/Bow/FBow</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.5</drawSize>
+			<drawSize>1.2</drawSize>
 		</graphicData>
 		<equippedAngleOffset>10</equippedAngleOffset>
 		<soundInteract>Bow_Recurve</soundInteract>
@@ -553,6 +553,7 @@
 		<graphicData>
 			<texPath>Weapons/BlackHydra</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.4</drawSize>
 		</graphicData>
 		<soundInteract>Interact_ChargeRifle</soundInteract>
 		<statBases>

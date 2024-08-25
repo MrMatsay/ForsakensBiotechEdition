@@ -8,6 +8,7 @@
 			<texPath>Plants/Gamma</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
+		<selectable>true</selectable>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<Beauty>10</Beauty>

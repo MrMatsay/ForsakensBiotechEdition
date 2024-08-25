@@ -50,7 +50,6 @@
 			</li>
 		</comps>
 	</ThingDef>
-
 	<HediffDef>
 		<defName>FO_RazorHigh</defName>
 		<description>High on razor</description>
