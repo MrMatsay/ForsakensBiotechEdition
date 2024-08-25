@@ -1,5 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!-- playerfaction -->
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>ForsakenPlayerColony</defName>
+		<label>Forsaken Syndicate</label>
+		<description>A Forsaken collective recently formed by those who share the bond of awakening. Cursed with immortality and an unbearable guilt, they step into the universe for the first time in a millennia. They have no memory of their past, nor do they know their destiny, but deep inside, each of them hears a whisper of chaos, urging them to walk the way of destruction, while something else compels them to seek an ancient wisdom...</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>Forsakens</basicMemberKind>
+		<pawnSingular>forsaken</pawnSingular>
+		<pawnsPlural>forsakens</pawnsPlural>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<FO_Forsaken>1</FO_Forsaken>
+			</xenotypeChances>
+		</xenotypeSet>
+		<techLevel>Ultra</techLevel>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<allowedCultures>
+			<li>FO_Syndicarian</li>
+		</allowedCultures>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<colorSpectrum Inherit="False"/>
+		<factionIconPath>World/ForsakenHomeIcon</factionIconPath>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>ClassicStart</li>
+			<li>ClassicStartTechprints</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Ultima</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
 
 	<!-- npc faction -->
 	<FactionDef ParentName="FactionBase">
