@@ -113,10 +113,17 @@
 						<li Class="VFECore.FactionDefExtension">			
 							<allowedBiomes>
 								<li>AB_RockyCrags</li>
-								<li>AB_PyroclasticConflagration</li>
 							</allowedBiomes>			
 						</li>
 					</value>
+				</li>
+				<!--Make Gamma plants darklight so they can enjoy their own biome-->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="AB_GiantGamma"]/comps/li[@Class="CompProperties_Glower"]/glowColor</xpath>
+					<value>
+						<glowColor>(78, 226, 229, 0)</glowColor>
+					</value>
+				
 				</li>
 			</operations>
 		</match>

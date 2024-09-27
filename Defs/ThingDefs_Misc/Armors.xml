@@ -49,11 +49,13 @@
 			<li Class="CompProperties_Forbiddable"/>
 		</comps>
 	</ThingDef>
-
 	<!-- Hood and cloak -->
 	<ThingDef ParentName="ArmorBaseForsaken">
 		<defName>FO_Forsaken_Hood</defName>
 		<label>forsaken hood</label>
+		<thingCategories>
+			<li>Headgear</li>
+		</thingCategories>
 		<description>This Forsaken-style hood gives protection, while helping the wearer keep calm and focused.</description>
 		<graphicData>
 			<texPath>Things/Apparel/FOhood/FOhood_south</texPath>
@@ -95,10 +97,12 @@
 			</layers>
 		</apparel>
 	</ThingDef>
-
 	<ThingDef ParentName="ArmorBaseForsaken">
 		<defName>FO_Forsaken_Hood_Child</defName>
 		<label>forsaken kid hood</label>
+		<thingCategories>
+			<li>Headgear</li>
+		</thingCategories>
 		<description>This Forsaken-style hood gives protection, while helping the wearer keep calm and focused.</description>
 		<graphicData>
 			<texPath>Things/Apparel/FOhood/FOhood_south</texPath>
@@ -141,11 +145,13 @@
 			</layers>
 		</apparel>
 	</ThingDef>
-
 	<ThingDef ParentName="ArmorBaseForsaken">
 		<defName>FO_Forsaken_Cloak</defName>
 		<description>This cloak has been fabricated by Forsaken for all of their hunting needs. It is lightweight and contains an integrated low-charge shield projector.</description>
 		<label>forsaken cloak</label>
+		<thingCategories>
+			<li>ApparelMisc</li>
+		</thingCategories>
 		<graphicData>
 			<texPath>Things/Apparel/FOcloak/FOcloak_Male_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -192,11 +198,13 @@
 			</layers>
 		</apparel>
 	</ThingDef>
-
 	<ThingDef ParentName="ArmorBaseForsaken">
 		<defName>FO_Forsaken_Cloak_Child</defName>
 		<description>This cloak has been fabricated by Forsaken for all of their hunting needs. It is lightweight and contains an integrated low-charge shield projector.</description>
 		<label>forsaken kid cloak</label>
+		<thingCategories>
+			<li>ApparelMisc</li>
+		</thingCategories>
 		<graphicData>
 			<texPath>Things/Apparel/FOcloak/FOcloak_Child_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -244,11 +252,13 @@
 			</layers>
 		</apparel>
 	</ThingDef>
-
 	<!-- Helmet and armor-->
 	<ThingDef ParentName="ArmorBaseForsaken">
 		<defName>FO_Forsaken_Helmet</defName>
 		<label>forsaken helmet</label>
+		<thingCategories>
+			<li>ArmorHeadgear</li>
+		</thingCategories>
 		<description>An ultratech Forsaken helmet designed for combat. Extremely durable and heightens focus.</description>
 		<graphicData>
 			<texPath>Things/Apparel/FOpowerhelmet/FOpowerhelmet_south</texPath>
@@ -295,10 +305,12 @@
 			<li Class="CompProperties_Biocodable"/>
 		</comps>
 	</ThingDef>
-
 	<ThingDef ParentName="ArmorBaseForsaken">
 		<defName>FO_Forsaken_Helmet_Child</defName>
 		<label>forsaken kid helmet</label>
+		<thingCategories>
+			<li>ArmorHeadgear</li>
+		</thingCategories>
 		<description>An ultratech Forsaken helmet designed for combat. Extremely durable and heightens focus.</description>
 		<graphicData>
 			<texPath>Things/Apparel/FOpowerhelmet/FOpowerhelmet_south</texPath>
@@ -346,10 +358,12 @@
 			<li Class="CompProperties_Biocodable"/>
 		</comps>
 	</ThingDef>
-
 	<ThingDef ParentName="ArmorBaseForsaken">
 		<defName>FO_Forsaken_PsyHelmet</defName>
 		<label>forsaken psycaster helmet</label>
+		<thingCategories>
+			<li>ArmorHeadgear</li>
+		</thingCategories>
 		<description>An ultratech Forsaken helmet designed for combat. Extremely durable and heightens focus. This particular design enhances psycic sensitivity instead of suppressing it.</description>
 		<graphicData>
 			<texPath>Things/Apparel/FOpowerhelmetpsy/FOpowerhelmetpsy_south</texPath>
@@ -398,10 +412,12 @@
 			<li Class="CompProperties_Biocodable"/>
 		</comps>
 	</ThingDef>
-
 	<ThingDef ParentName="ArmorBaseForsaken">
 		<defName>FO_Forsaken_PsyHelmet_Child</defName>
 		<label>forsaken kid psycaster helmet</label>
+		<thingCategories>
+			<li>ArmorHeadgear</li>
+		</thingCategories>
 		<description>An ultratech Forsaken helmet designed for combat. Extremely durable and heightens focus. This particular design enhances psycic sensitivity instead of suppressing it.</description>
 		<graphicData>
 			<texPath>Things/Apparel/FOpowerhelmetpsy/FOpowerhelmetpsy_south</texPath>
@@ -451,10 +467,12 @@
 			<li Class="CompProperties_Biocodable"/>
 		</comps>
 	</ThingDef>
-
 	<ThingDef ParentName="ArmorBaseForsaken">
 		<defName>FO_Forsaken_Armor</defName>
 		<label>forsaken armor</label>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
 		<description>An ultratech Forsaken armor designed for combat. Extremely durable and comfortable.</description>
 		<graphicData>
 			<texPath>Things/Apparel/FOpowerarmor/FOpowerarmor_Male_south</texPath>
@@ -507,10 +525,12 @@
 			<li Class="CompProperties_Biocodable"/>
 		</comps>
 	</ThingDef>
-
 	<ThingDef ParentName="ArmorBaseForsaken">
 		<defName>FO_Forsaken_Armor_Child</defName>
 		<label>forsaken kid armor</label>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
 		<description>An ultratech Forsaken armor designed for combat. Extremely durable and comfortable.</description>
 		<graphicData>
 			<texPath>Things/Apparel/FOpowerarmor/FOpowerarmor_Child_south</texPath>
